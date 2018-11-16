@@ -19,7 +19,5 @@ class TitleBracketsValidator < ActiveModel::Validator
       end
     end
     movie.errors.add(:brackets, "haven't been correctly closed") unless l.empty? # at this point l should be empty
-    p movie.title
-    p movie.errors
   end
 end
