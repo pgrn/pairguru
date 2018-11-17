@@ -1,0 +1,2 @@
+module ToplistsHelper
+end

@@ -17,5 +17,6 @@ Rails.application.routes.draw do
     resources :comments, only: [:create, :destroy] do 
     end
   end
+  get "/toplist/users", to: "toplists#user_toplist"
   
 end

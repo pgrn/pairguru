@@ -1,0 +1,5 @@
+.row
+  .col-md-8.col-md-offset-2.col-lg-8.col-lg-offset-2
+    %h1.text-center Top commenters
+    %h4.text-muted.text-center (from this time last week to now)
+    = render 'user_toplist_table', top_users: @top_users

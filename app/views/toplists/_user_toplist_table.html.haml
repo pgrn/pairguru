@@ -1,0 +1,11 @@
+%table.table.table-striped
+  %tbody
+    - top_users.each_with_index do |user, i|
+      %tr
+        %td= i + 1
+        %td
+          %h4
+            = "#{user.name} (#{user.email})"
+          %p
+            %strong
+            = "#{user.comments_count} comments"
